@@ -1,13 +1,13 @@
 puts 'Введите три стороны треугольника a, b и c'
 
 print 'a='
-a = gets.to_f
+side_a = gets.to_f
 print 'b='
-b = gets.to_f
+side_b = gets.to_f
 print 'c='
-c = gets.to_f
+side_c = gets.to_f
 
-a, b, c = [a, b, c].sort
+a, b, c = [side_a, side_b, side_c].sort
 
 if (a > 0) && (b > 0) && (c > 0) && ((a + b) > c) && ((b + c) > a) && ((c + a) > b)
   if (a == b) && (a == c)
